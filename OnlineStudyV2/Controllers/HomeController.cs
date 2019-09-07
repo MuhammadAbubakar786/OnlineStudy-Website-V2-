@@ -30,9 +30,9 @@ namespace OnlineStudyV2.Controllers
         }
         public IActionResult Viewdata()
         {
-            orm.ConatctUs.ToList();
-            orm.SaveChanges();
-            return View();
+           var mydata= orm.ConatctUs.ToList();
+            //orm.SaveChanges();
+            return View(mydata);
         }
         public IActionResult Privacy()
         {
