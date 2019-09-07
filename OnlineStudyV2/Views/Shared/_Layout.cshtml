@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlineStudy</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="home">
+        <!-- Start your project here-->
+        <!--Start Navigation Bar-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top">
+            <a href="index.html" class="navbar-brand nav-font pl-5">Online Study</a>
+            <span class="navbar-text">Learn and Implement</span>
+            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                    data-target="#Link1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Link1">
+                <ul class="navbar-nav pl-5 custom-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#Courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#Team" class="nav-link">Team</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="home/viewdata" class="nav-link">Details</a></li>
+
+                </ul>
+            </div>
+        </nav><!--End Navigation Bar-->
+        <!--Start Jumbotron-->
+        <div class="jumbotron back-img" style="background-image: url(img/Banner.jpeg)">
+            <div class="text-center">
+                <h1 class="text-uppercase text-danger font-weight-bold" style="padding-top: 120px">Welcome to Online Study</h1>
+                <p class="font-weight-bold font-italic" style="font-size: 24px;">Learn and study</p>
+                <a href="#" class="btn btn-outline-danger mr-4">Hire me</a>
+                <a href="#" class="btn btn-outline-danger">Join us</a>
+            </div>
+        </div>
+        <!--End Jumbotron-->
+        <!--Our Services-->
+        <div class="container text-center border-bottom" id="Services">
+            <h2 class="font-weight-bold">Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-sm-4 mb-4">
+                    <a href="#"><i class="fab fa-android fa-10x text-success"></i></a>
+                    <h4 class="mt-4">Android Application</h4>
+                </div>
+                <div class="col-sm-4 mb-4">
+                    <a href="#"><i class="fas fa-desktop fa-10x text-primary"></i></a>
+                    <h4 class="mt-4">Web Application</h4>
+                </div>
+                <div class="col-sm-4 mb-4">
+                    <a href="#"><i class="fas fa-database fa-10x text-success"></i></a>
+                    <h4 class="mt-4">DataBase</h4>
+                </div>
+            </div>
+        </div>
+        <!--End Our Services-->
+        <!--Start Courses-->
+        <div class="container pt-5" id="Courses">
+            <h2 class="text-center font-weight-bold">Our Courses</h2>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <img src="img/course1.jpeg" class="img-fluid" alt="course1">
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <h2 class="text-center font-weight-bold">Learn Java Programming</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusamus placeat, perferendis amet
+                        tempore rem aut Sit perspiciatis voluptates nihil illo vel veritatis, quasi fugiat velit beatae natus facere eligendi.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, expedita obcaecati? Ea iste eius cum voluptate,
+                        suscipit nobis assumenda natus neque? Voluptatibus eos placeat pariatur vero suscipit iure nobis recusandae.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 mt-3">
+                    <h2 class="text-center font-weight-bold">Real World Projects</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusamus placeat, perferendis amet
+                        tempore rem aut Sit perspiciatis voluptates nihil illo vel veritatis, quasi fugiat velit beatae natus facere eligendi.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, expedita obcaecati? Ea iste eius cum voluptate,
+                        suscipit nobis assumenda natus neque? Voluptatibus eos placeat pariatur vero suscipit iure nobis recusandae.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/course2.jpeg" class="img-fluid" alt="course2">
+                </div>
+            </div>
+        </div>
+        <!--End Courses-->
+        <!--Start Team-->
+        <div class="jumbotron bg-danger mt-3" id="Team">
+            <div class="container mt-1">
+                <h2 class="text-center font-weight-bold text-white">Team</h2>
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/avtar1.jpeg" class="img-fluid" style="border-radius: 100px;" alt="card-img1">
+                                <h4 class="card-title">Usman</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis quo ratione quia,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/avtar3.jpeg" class="img-fluid" style="border-radius: 100px;" alt="card-img3">
+                                <h4 class="card-title">Zain</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis quo ratione quia,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/avtar2.jpeg" class="img-fluid" style="border-radius: 100px;" alt="card-img2">
+                                <h4 class="card-title">Urooj</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis quo ratione quia,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="img/avtar4.jpeg" class="img-fluid" style="border-radius: 100px;" alt="card-img4">
+                                <h4 class="card-title">Seerat</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis quo ratione quia,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Team-->
+
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--Start Footer-->
+    <footer>
+        <div class="container-fluid bg-dark text-white mt-5 border border-top border-danger">
+            <div class="row py-3">
+                <div class="col-md-6">
+                    <span>Follow Us</span>
+                    <a href="#"><i class="fab fa-facebook px-3"></i></a>
+                    <a href="#"><i class="fab fa-instagram pr-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter pr-3"></i></a>
+                    <a href="#"><i class="fab fa-youtube pr-3"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g pr-3"></i></a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <small>Designed By <a href="#">OnlineStudy</a>&copy; 2019</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <!-- End Project Here-->
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

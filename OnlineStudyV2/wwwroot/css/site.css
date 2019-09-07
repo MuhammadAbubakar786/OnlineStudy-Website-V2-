@@ -1,0 +1,31 @@
+﻿/**Change NavBrand Font**/
+.nav-font {
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+/*Change Navigation color*/
+.navbar #link .custom-nav .nav-item a {
+    color: #fff;
+}
+
+    .navbar #link .custom-nav .nav-item a:hover {
+        color: #F0AAB1;
+    }
+/**jumbotron image responsive**/
+.back-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 70vh;
+    border-radius: 0px;
+    margin-top: 74px;
+}
+/**Links color**/
+a {
+    color: #DC3545;
+}
+
+    a:hover {
+        color: #E994A2;
+    }
